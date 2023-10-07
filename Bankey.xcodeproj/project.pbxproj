@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EC6C34962AD174BF00E89156 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34952AD174BF00E89156 /* AppDelegate.swift */; };
-		EC6C34982AD174BF00E89156 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34972AD174BF00E89156 /* SceneDelegate.swift */; };
-		EC6C349A2AD174BF00E89156 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34992AD174BF00E89156 /* ViewController.swift */; };
-		EC6C349D2AD174BF00E89156 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C349B2AD174BF00E89156 /* Main.storyboard */; };
+		EC6C349A2AD174BF00E89156 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34992AD174BF00E89156 /* LoginViewController.swift */; };
 		EC6C349F2AD174C000E89156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6C349E2AD174C000E89156 /* Assets.xcassets */; };
 		EC6C34A22AD174C000E89156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C34A02AD174C000E89156 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
@@ -18,9 +16,7 @@
 /* Begin PBXFileReference section */
 		EC6C34922AD174BF00E89156 /* Bankey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bankey.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EC6C34952AD174BF00E89156 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EC6C34972AD174BF00E89156 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		EC6C34992AD174BF00E89156 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		EC6C349C2AD174BF00E89156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC6C34992AD174BF00E89156 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		EC6C349E2AD174C000E89156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6C34A12AD174C000E89156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6C34A32AD174C000E89156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -57,9 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				EC6C34952AD174BF00E89156 /* AppDelegate.swift */,
-				EC6C34972AD174BF00E89156 /* SceneDelegate.swift */,
-				EC6C34992AD174BF00E89156 /* ViewController.swift */,
-				EC6C349B2AD174BF00E89156 /* Main.storyboard */,
+				EC6C34992AD174BF00E89156 /* LoginViewController.swift */,
 				EC6C349E2AD174C000E89156 /* Assets.xcassets */,
 				EC6C34A02AD174C000E89156 /* LaunchScreen.storyboard */,
 				EC6C34A32AD174C000E89156 /* Info.plist */,
@@ -127,7 +121,6 @@
 			files = (
 				EC6C34A22AD174C000E89156 /* LaunchScreen.storyboard in Resources */,
 				EC6C349F2AD174C000E89156 /* Assets.xcassets in Resources */,
-				EC6C349D2AD174BF00E89156 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +131,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EC6C349A2AD174BF00E89156 /* ViewController.swift in Sources */,
+				EC6C349A2AD174BF00E89156 /* LoginViewController.swift in Sources */,
 				EC6C34962AD174BF00E89156 /* AppDelegate.swift in Sources */,
-				EC6C34982AD174BF00E89156 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EC6C349B2AD174BF00E89156 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				EC6C349C2AD174BF00E89156 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		EC6C34A02AD174C000E89156 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -297,7 +281,6 @@
 				INFOPLIST_FILE = Bankey/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -325,7 +308,6 @@
 				INFOPLIST_FILE = Bankey/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (

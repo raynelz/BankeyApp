@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  LoginViewController.swift
 //  Bankey
 //
 //  Created by Захар Литвинчук on 07.10.2023.
