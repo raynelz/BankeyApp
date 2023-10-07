@@ -11,6 +11,7 @@
 		EC6C349A2AD174BF00E89156 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34992AD174BF00E89156 /* LoginViewController.swift */; };
 		EC6C349F2AD174C000E89156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC6C349E2AD174C000E89156 /* Assets.xcassets */; };
 		EC6C34A22AD174C000E89156 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC6C34A02AD174C000E89156 /* LaunchScreen.storyboard */; };
+		EC6C34AC2AD1779100E89156 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC6C34AB2AD1779100E89156 /* LoginView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		EC6C349E2AD174C000E89156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EC6C34A12AD174C000E89156 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EC6C34A32AD174C000E89156 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC6C34AB2AD1779100E89156 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,13 +54,30 @@
 		EC6C34942AD174BF00E89156 /* Bankey */ = {
 			isa = PBXGroup;
 			children = (
+				EC6C34A92AD1772A00E89156 /* Files */,
+				EC6C34AA2AD1776600E89156 /* Login */,
 				EC6C34952AD174BF00E89156 /* AppDelegate.swift */,
-				EC6C34992AD174BF00E89156 /* LoginViewController.swift */,
+			);
+			path = Bankey;
+			sourceTree = "<group>";
+		};
+		EC6C34A92AD1772A00E89156 /* Files */ = {
+			isa = PBXGroup;
+			children = (
 				EC6C349E2AD174C000E89156 /* Assets.xcassets */,
 				EC6C34A02AD174C000E89156 /* LaunchScreen.storyboard */,
 				EC6C34A32AD174C000E89156 /* Info.plist */,
 			);
-			path = Bankey;
+			name = Files;
+			sourceTree = "<group>";
+		};
+		EC6C34AA2AD1776600E89156 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				EC6C34992AD174BF00E89156 /* LoginViewController.swift */,
+				EC6C34AB2AD1779100E89156 /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +150,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC6C34AC2AD1779100E89156 /* LoginView.swift in Sources */,
 				EC6C349A2AD174BF00E89156 /* LoginViewController.swift in Sources */,
 				EC6C34962AD174BF00E89156 /* AppDelegate.swift in Sources */,
 			);
