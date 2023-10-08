@@ -10,7 +10,7 @@ import UIKit
 
 class LoginView: UIView {
     
-    let stackView = UIStackView()
+    let authStackView = UIStackView()
     let usernameTextField = UITextField()
     let passwordTextField = UITextField()
     let dividerView = UIView()
@@ -19,7 +19,7 @@ class LoginView: UIView {
         super.init(frame: frame)
         
         style()
-        layout()
+        layoutSubview()
     }
     
     required init?(coder: NSCoder) {
@@ -33,9 +33,9 @@ extension LoginView {
         translatesAutoresizingMaskIntoConstraints = false
         backgroundColor = .secondarySystemBackground
         
-        stackView.translatesAutoresizingMaskIntoConstraints = false
-        stackView.axis = .vertical
-        stackView.spacing = 8
+        authStackView.translatesAutoresizingMaskIntoConstraints = false
+        authStackView.axis = .vertical
+        authStackView.spacing = 8
         
         usernameTextField.translatesAutoresizingMaskIntoConstraints = false
         usernameTextField.placeholder = "Username"
@@ -53,18 +53,18 @@ extension LoginView {
         clipsToBounds = true
     }
     
-    func layout() {
-        stackView.addArrangedSubview(usernameTextField)
-        stackView.addArrangedSubview(dividerView)
-        stackView.addArrangedSubview(passwordTextField)
+    func layoutSubview() {
+        authStackView.addArrangedSubview(usernameTextField)
+        authStackView.addArrangedSubview(dividerView)
+        authStackView.addArrangedSubview(passwordTextField)
         
-        addSubview(stackView)
+        addSubview(authStackView)
         
         NSLayoutConstraint.activate([
-            stackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
-            stackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
-            trailingAnchor.constraint(equalToSystemSpacingAfter: stackView.trailingAnchor, multiplier: 1),
-            bottomAnchor.constraint(equalToSystemSpacingBelow: stackView.bottomAnchor, multiplier: 1)
+            authStackView.topAnchor.constraint(equalToSystemSpacingBelow: topAnchor, multiplier: 1),
+            authStackView.leadingAnchor.constraint(equalToSystemSpacingAfter: leadingAnchor, multiplier: 1),
+            trailingAnchor.constraint(equalToSystemSpacingAfter: authStackView.trailingAnchor, multiplier: 1),
+            bottomAnchor.constraint(equalToSystemSpacingBelow: authStackView.bottomAnchor, multiplier: 1)
         ])
         
         dividerView.heightAnchor.constraint(equalToConstant: 1).isActive = true

@@ -26,12 +26,12 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         style()
-        layout()
+        layoutSubview()
     }
 }
 
 extension LoginViewController {
-    private func style() {
+    public func style() {
         titleLabel.translatesAutoresizingMaskIntoConstraints = false
         titleLabel.textAlignment = .center
         titleLabel.font = UIFont.preferredFont(forTextStyle: .largeTitle)
@@ -61,7 +61,7 @@ extension LoginViewController {
         errorMessageLabel.isHidden = true
     }
     
-    private func layout() {
+    public func layoutSubview() {
         view.addSubview(titleLabel)
         view.addSubview(subtitleLabel)
         view.addSubview(loginView)
@@ -103,10 +103,8 @@ extension LoginViewController {
         ])
         
     }
-}
-
-// MARK: Actions
-extension LoginViewController {
+    
+    // Actions
     @objc func signInTapped(sender: UIButton) {
         errorMessageLabel.isHidden = true
         login()
@@ -117,15 +115,14 @@ extension LoginViewController {
             assertionFailure("Username / password should never be nil")
             return
         }
-        
         if username.isEmpty || password.isEmpty {
             configureView(withMessage: "Username / password cannot be blank")
             return
+        } else if username == "Zahar" && password == "Welcome" {
+            signInButton.configuration?.showsActivityIndicator = true
+            
         }
         
-        if username == "Zahar" && password == "Welcome" {
-            signInButton.configuration?.showsActivityIndicator = true
-        }
     }
     
     private func configureView(withMessage message: String) {
@@ -133,3 +130,11 @@ extension LoginViewController {
         errorMessageLabel.text = message
     }
 }
+
+
+
+
+
+
+
+
